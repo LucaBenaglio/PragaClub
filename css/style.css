@@ -165,13 +165,6 @@
   border-radius: 20px;
   box-shadow: 15px 25px 35px 0px #000; }
 
-.grid-footer-index {
-  grid-area: footer;
-  display: block;
-  background-color: red;
-  height: 200px;
-  width: 100%; }
-
 * {
   margin: 0;
   padding: 0;
