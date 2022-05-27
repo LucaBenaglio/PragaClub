@@ -1,4 +1,116 @@
 @import "../variables/variables";
 @import "../sass2/extend";
 @import "../sass2/maps";
-@import "../sass2/mixins"
+@import "../sass2/mixins";
+
+
+.body-index {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 3fr 0.5fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav nav"
+        "main main"
+        "footer footer";
+}
+
+
+
+// NAV -------
+
+.nav-estilos {
+    grid-area: nav;
+    background-color: #000b;
+}
+
+.nav-a {
+
+
+    color: $color-white;
+    font-size: large;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.nav-a:hover {
+    background-color: $azul-neon;
+    box-shadow: 0 0 10px $azul-neon, 0 0 40px $azul-neon, 0 0 80px $azul-neon;
+    color: $color-white;
+}
+
+
+
+.boton-nav {
+    background-color: #ddd;
+}
+
+// NAV -------
+
+
+
+// MAIN ------
+
+.grid-main-index {
+    grid-area: main;
+    height: 1000px;
+    width: 100%;
+}
+
+.index-div1 {
+    display: inline-block;
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+    font-size: x-large;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 15px 25px 35px 0px $color-black;
+}
+
+.index-div2 {
+    display: inline-block;
+    background-color: #57d;
+    width: 500px;
+    height: 500px;
+    font-size: x-large;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 15px 25px 35px 0px $color-black;
+}
+
+// MAIN -----
+
+
+
+
+
+
+
+// FOOTER
+
+.grid-footer-index {
+    grid-area: footer;
+    display: block;
+    background-color: red;
+    height: 200px;
+    width: 100%;
+}
+
+
+// FOOTER

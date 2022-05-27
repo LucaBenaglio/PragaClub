@@ -6,19 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap -->
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- bootstrap -->
+    <!-- BOOTSTRAP -->
 
     <link rel="stylesheet" href="../css/style.css">
     <title>Praga Club</title>
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ANIMATE CSS -->
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/ff957bd761.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME -->
+
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg">
+<body class="body-contacto">
+    <nav class="navbar navbar-expand-lg nav-estilos">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler boton-nav" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,25 +40,83 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link nav-a" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./vip.html">Vip</a>
+                        <a class="nav-link nav-a" href="./vip.html">Vip</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./eventos.html">Eventos</a>
+                        <a class="nav-link nav-a" href="./eventos.html">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./restobar.html">RestoBar</a>
+                        <a class="nav-link nav-a" href="./restobar.html">RestoBar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link nav-a" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
 
             </div>
         </div>
     </nav>
+
+    <div class="grid-container-contacto">
+
+        <h1 class="logo-contacto"><span>C</span>ontactanos</h1>
+
+        <div class="contacto-wrap">
+
+            <div class="contacto-form">
+                <h2>PragaClub</h2>
+                <form>
+
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" name="telefono">
+                    </p>
+                    <p>
+                        <label for="asunto">Asunto</label>
+                        <input type="text" name="asunto">
+                    </p>
+                    <p class="block">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
+
+                </form>
+
+            </div>
+
+            <div class="contacto-info">
+                <h3>Mas Informacion</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Av.Rivadavia 310</li>
+                    <li><i class="fa-solid fa-phone"></i> (54) 3476 311003</li>
+                    <li><i class="fa-solid fa-envelope"></i> PragaClub@gmail.com</li>
+                </ul>
+                <p>Contactanos en caso de querer un puesto de trabajo, ser manager de un artista y querer coordinar un
+                    evento o en caso de tener algun tipo de reclamo, gracias!
+                </p>
+                <p>
+                    PragaClub.com.ar
+                </p>
+            </div>
+        </div>
+
+    </div>
 
 
 

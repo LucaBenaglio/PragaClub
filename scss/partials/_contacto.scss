@@ -1,4 +1,133 @@
 @import "../variables/variables";
 @import "../sass2/extend";
 @import "../sass2/maps";
-@import "../sass2/mixins"
+@import "../sass2/mixins";
+
+*{
+    box-sizing: border-box;
+}
+
+.body-contacto{
+    background: #181818;
+}
+
+.grid-container-contacto{
+    color: $color-white;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.grid-container-contacto h1{
+    padding: 30px;
+}
+
+.logo-contacto{
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 0 0 10px $azul-neon, 0 0 40px $azul-neon, 0 0 80px $azul-neon;
+}
+
+.logo-contacto span{
+    color: $azul-neon;
+    text-shadow: 0 0 10px $azul-neon, 0 0 40px $azul-neon, 0 0 80px $azul-neon;
+}
+
+.contacto-wrap{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contacto-wrap > *{
+    padding: 1em;
+}
+
+.contacto-form{
+    background: #222222;
+}
+
+.contacto-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-form form .block{
+    grid-column: 1 / 3;
+}
+
+.contacto-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: $color-white;
+    border-bottom: 1px solid $azul-neon;
+}
+
+.contacto-form form button {
+    background-color: #45d;
+    color: $color-black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contacto-form form button:hover,
+.contacto-form form button:focus {
+    background: #56d;
+    color: $color-white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contacto-info{
+    background-color: $color-black;
+}
+
+.contacto-info h3,
+.contacto-info ul,
+.contacto-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contacto-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contacto-info ul li{
+    padding: .3em;
+}
+
+
+// DESKTOP
+@media (min-width: 830px) {
+    .grid-container-contacto{
+        padding: 0 4rem;
+    }
+    .contacto-wrap{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contacto-wrap > * {
+        padding: 2em;
+    }
+    .contacto-info h3,
+    .contacto-info ul,
+    .contacto-info p{
+        padding: 1em;
+        text-align: left;
+    }
+}
