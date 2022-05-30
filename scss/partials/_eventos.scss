@@ -5,10 +5,10 @@
 
 .body-eventos{
     background-color: #181818;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .cuerpo-eventos{
+    font-family: 'Quicksand', sans-serif;
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -16,6 +16,7 @@
 }
 
 .h1-eventos{
+    font-family: 'Quicksand', sans-serif;
     color: $color-white;
     text-align: center;
     margin: 5px;
