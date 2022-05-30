@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
-* {
-  box-sizing: border-box; }
-
 .body-contacto {
   background: #181818; }
 
@@ -101,6 +98,56 @@
   .contacto-info p {
     padding: 1em;
     text-align: left; } }
+
+.body-eventos {
+  background-color: #181818;
+  font-family: 'Quicksand', sans-serif; }
+
+.cuerpo-eventos {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.h1-eventos {
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+  text-shadow: 0 0 10px #57d, 0 0 40px #57d, 0 0 80px #57d; }
+
+.caja-eventos {
+  margin: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.3);
+  max-width: 450px; }
+
+.box-eventos {
+  background-color: #222; }
+
+.caja-eventos:hover {
+  opacity: .8;
+  cursor: pointer; }
+
+.box-eventos h2 {
+  color: #fff;
+  text-align: center;
+  padding: 15px 0; }
+
+.info-eventos {
+  color: #fff;
+  margin: 10px; }
+
+@media only screen and (max-width: 992px) {
+  .img-eventos {
+    display: none; } }
+
+@media only screen and (max-width: 500px) {
+  .cuerpo-eventos {
+    font-size: 13px; }
+  .caja-eventos {
+    max-width: 305px; }
+  .img2-eventos {
+    width: 305px; } }
 
 .body-index {
   background-image: url(../img/fondo.jpg);

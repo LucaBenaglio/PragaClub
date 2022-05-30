@@ -2,3 +2,68 @@
 @import "../sass2/extend";
 @import "../sass2/maps";
 @import "../sass2/mixins";
+
+.body-eventos{
+    background-color: #181818;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cuerpo-eventos{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.h1-eventos{
+    color: $color-white;
+    text-align: center;
+    margin: 5px;
+    text-shadow: 0 0 10px $azul-neon, 0 0 40px $azul-neon, 0 0 80px $azul-neon;
+
+}
+
+.caja-eventos{
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, .3);
+    max-width: 450px;
+}
+
+.box-eventos{
+    background-color: #222;
+}
+
+.caja-eventos:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.box-eventos h2{
+    color: $color-white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.info-eventos{
+    color: $color-white;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+    .img-eventos{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cuerpo-eventos{
+        font-size: 13px;
+    }
+    .caja-eventos{
+        max-width: 305px;
+    }
+    .img2-eventos{
+        width: 305px;
+    }
+}
