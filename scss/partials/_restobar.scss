@@ -2,3 +2,151 @@
 @import "../sass2/extend";
 @import "../sass2/maps";
 @import "../sass2/mixins";
+
+*{
+    transition: all .2s linear;
+}
+
+.home-restobar {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #181818;
+}
+
+.home-restobar .contenido-home {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+    margin: 50px;
+}
+
+.home-restobar .imagen-home {
+    flex: 1 1 40rem;
+}
+
+.home-restobar .imagen-home img {
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+.h2-restobar{
+    background-color: #181818;
+    color: $color-white;
+    margin-left: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.h2-restobar span{
+    color: $azul-neon;
+    text-shadow: 0 0 10px $azul-neon, 0 0 40px $azul-neon, 0 0 80px $azul-neon;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(3rem);
+    }
+}
+
+.home-restobar .contenido-home h1 {
+    font-size: 70px;
+    color: $color-white;
+}
+
+.contenido-home h1 span{
+    color: $azul-neon;
+    text-shadow: 0 0 10px $azul-neon, 0 0 40px $azul-neon, 0 0 80px $azul-neon;
+}
+
+.home-restobar .contenido-home p {
+    font-size: 1.7rem;
+    color: #bbb;
+    padding: 1rem 0;
+}
+
+.escpecialidades {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #181818;
+}
+
+.caja-contenedor-restobar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.caja-restobar {
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: .5rem;
+    margin: 30px 15px
+}
+
+.img-restobar {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.contenido-restobar {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+}
+
+.contenido-restobar img {
+    margin: 1.5rem 0;
+}
+
+.contenido-restobar h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contenido-restobar p {
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.escpecialidades .caja-contenedor-restobar .caja-restobar:hover .img-restobar {
+    top: 0;
+}
+
+.escpecialidades .caja-contenedor-restobar .caja-restobar:hover .contenido-restobar {
+    transform: translateY(100%);
+}
+
+@media only screen and (max-width: 450px){
+    .contenido-restobar h3 {
+        font-size: 2.2rem;
+    }
+    
+    .contenido-restobar p {
+        font-size: 1.4rem;
+    }
+    .home-restobar .contenido-home h1{
+        font-size: 40px;
+        transition: none;
+    }
+    .h2-restobar{
+        font-size: 25px;
+    }
+}
