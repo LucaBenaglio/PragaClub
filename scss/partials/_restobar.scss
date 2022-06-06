@@ -3,7 +3,7 @@
 @import "../sass2/maps";
 @import "../sass2/mixins";
 
-*{
+* {
     transition: all .2s linear;
 }
 
@@ -33,7 +33,7 @@
     animation: float 3s linear infinite;
 }
 
-.h2-restobar{
+.h2-restobar {
     background-color: #181818;
     color: $color-white;
     margin-left: 40px;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.h2-restobar span{
+.h2-restobar span {
     color: $azul-neon;
     text-shadow: 0 0 10px $azul-neon, 0 0 40px $azul-neon, 0 0 80px $azul-neon;
 }
@@ -63,7 +63,7 @@
     color: $color-white;
 }
 
-.contenido-home h1 span{
+.contenido-home h1 span {
     color: $azul-neon;
     text-shadow: 0 0 10px $azul-neon, 0 0 40px $azul-neon, 0 0 80px $azul-neon;
 }
@@ -134,19 +134,62 @@
     transform: translateY(100%);
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 1405px) {
+    .imagen-hamburguesa-restobar {
+        max-width: 600px;
+    }
+
+    .contenido-home {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1365px) {
+    .imagen-hamburguesa-restobar {
+        max-width: 600px;
+    }
+
+    .contenido-home {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1265px) {
+    .imagen-hamburguesa-restobar {
+        max-width: 500px;
+    }
+
+    .contenido-home {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1165px) {
+    .imagen-hamburguesa-restobar {
+        display: none;
+    }
+
+    .home-restobar .contenido-home h1 {
+        font-size: 50px;
+        transition: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
     .contenido-restobar h3 {
         font-size: 2.2rem;
     }
-    
+
     .contenido-restobar p {
         font-size: 1.4rem;
     }
-    .home-restobar .contenido-home h1{
+
+    .home-restobar .contenido-home h1 {
         font-size: 40px;
         transition: none;
     }
-    .h2-restobar{
+
+    .h2-restobar {
         font-size: 25px;
     }
 }

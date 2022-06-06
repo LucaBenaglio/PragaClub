@@ -403,6 +403,31 @@
 .escpecialidades .caja-contenedor-restobar .caja-restobar:hover .contenido-restobar {
   transform: translateY(100%); }
 
+@media only screen and (max-width: 1405px) {
+  .imagen-hamburguesa-restobar {
+    max-width: 600px; }
+  .contenido-home {
+    max-width: 600px; } }
+
+@media only screen and (max-width: 1365px) {
+  .imagen-hamburguesa-restobar {
+    max-width: 600px; }
+  .contenido-home {
+    max-width: 500px; } }
+
+@media only screen and (max-width: 1265px) {
+  .imagen-hamburguesa-restobar {
+    max-width: 500px; }
+  .contenido-home {
+    max-width: 400px; } }
+
+@media only screen and (max-width: 1165px) {
+  .imagen-hamburguesa-restobar {
+    display: none; }
+  .home-restobar .contenido-home h1 {
+    font-size: 50px;
+    transition: none; } }
+
 @media only screen and (max-width: 450px) {
   .contenido-restobar h3 {
     font-size: 2.2rem; }
